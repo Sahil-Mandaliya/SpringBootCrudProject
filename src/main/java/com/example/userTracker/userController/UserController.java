@@ -50,7 +50,6 @@ public class UserController {
 
     @DeleteMapping("/users")
     public UserResponse deleteByIds(@RequestBody List<Long> Ids) {
-        System.out.println(Ids);
         try {
             userService.deleteByIds(Ids);
             return new UserResponse(HttpStatus.OK, null, "Success");

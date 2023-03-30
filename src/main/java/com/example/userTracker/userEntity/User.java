@@ -11,21 +11,21 @@ public class User {
     }
 
     @Id
-    private int id;
+    private Long id;
     private String name;
-    private int mobile;
+    private Long mobile;
 
-    public User(int id, String name, int mobile) {
+    public User(Long id, String name, Long mobile) {
         this.id = id;
         this.name = name;
         this.mobile = mobile;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,11 +37,11 @@ public class User {
         this.name = name;
     }
 
-    public int getMobile() {
+    public Long getMobile() {
         return mobile;
     }
 
-    public void setMobile(int mobile) {
+    public void setMobile(Long mobile) {
         this.mobile = mobile;
     }
 
